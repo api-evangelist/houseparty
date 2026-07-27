@@ -1,8 +1,23 @@
 aid: houseparty
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/houseparty.png
 name: Houseparty
-description: 'Houseparty is a company surfaced as a portfolio company of greylock and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Houseparty was a face-to-face social networking and group video chat mobile app developed
+  by Life on Air, Inc. Launched in 2016, it let up to eight friends video chat together in shared rooms
+  and play built-in games such as Heads Up! and trivia. Epic Games acquired Houseparty in June 2019, and
+  the service was discontinued in October 2021 with its team folded into Epic. Surfaced as a Greylock
+  portfolio company, it is retained in the API Evangelist network as a historical consumer-social profile;
+  the product is defunct and publishes no developer API, documentation, or SDKs.'
 url: https://raw.githubusercontent.com/api-evangelist/houseparty/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Social
+- Video Chat
+- Mobile
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,4 +43,12 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://adfs4.sts.altareturn.com/adfs/ls/?wa=wsignin1.0&amp;wtrealm=urn%3aportal%3agreylock&amp;wctx=https%3a%2f%2fgreylock.altareturn.com%2f_layouts%2f15%2fAuthenticate.aspx%3fSource%3d%252F&amp;wreply=https%3a%2f%2fgreylock.altareturn.com%2f_trust%2fdefault.aspx
+  url: https://houseparty.com
+- type: Reference
+  name: Wikipedia — Houseparty (app)
+  url: https://en.wikipedia.org/wiki/Houseparty_(app)
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
